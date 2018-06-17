@@ -1,0 +1,12 @@
+<div class="main">
+  <div class="listHeader">
+    <span>
+      {{ 'weatherList.header' | translate }}
+    </span>
+    <app-gender-toggle [changeGender]="changeGender.bind(this)"></app-gender-toggle>
+  </div>
+  <div class="location-wrapper">
+    <app-loaction-component [@fadeIn]="''" [loc]="location" *ngFor="let location of locationsList | paginate: { itemsPerPage: itemsOnPage, currentPage: p } ; let i = index; "></app-loaction-component>
+  </div>
+  <pagination-controls (pageChange)="p = $event" *ngIf="locationsList"></pagination-controls>
+</div>

@@ -1,0 +1,29 @@
+@import "../../common/styles";
+
+/deep/ app-loaction-component{
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  margin-left:10px;
+  margin-right: 10px;
+  background: $white;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px $white;
+  border-radius: 8px;
+  padding-top: 10px;
+}
+.locationName{
+  font-size: 25px;
+  color: $battleship-grey;
+  margin-bottom: 10px;
+  display:block;
+}
+.tempBox{
+  &>span{
+    display: block;
+    margin-bottom: 5px;
+  }
+  .dataRow{
+    color: $clear-blue;
+  }
+}

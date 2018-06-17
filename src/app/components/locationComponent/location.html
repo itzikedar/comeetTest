@@ -1,0 +1,33 @@
+<span class="locationName"> {{ getValue('name') }}</span>
+<div class="tempBox">
+  <span>
+    {{ 'locationComponent.temp' | translate }} :
+    <span class="dataRow">
+      {{ getValue('main.temp') }}
+    </span>
+  </span>
+  <span>
+    {{ 'locationComponent.humidity' | translate }} :
+    <span class="dataRow">
+      {{ getValue('main.humidity') }}
+    </span>
+  </span>
+  <span>
+    {{ 'locationComponent.clouds' | translate }} :
+    <span class="dataRow">
+      {{ getValue('clouds.today') }}
+    </span>
+  </span>
+  <span>
+    {{ 'locationComponent.temp_min' | translate }} :
+    <span class="dataRow">
+      {{ getValue('main.temp_min') }}
+    </span>
+  </span>
+  <span>
+    {{ 'locationComponent.temp_max' | translate }} :
+    <span class="dataRow">
+      {{ getValue('main.temp_max') }}
+    </span>
+  </span>
+</div>

@@ -1,0 +1,11 @@
+//Colors
+$mainRed: #ff0000;
+$clear-blue:#2e88f6;
+$white: #ffffff;
+$gray: rgb(232,233,237);
+$battleship-grey:#6b7787;
+$black: rgba(0, 0, 0, 0.5);
+/deep/ body{
+  margin: 0;
+  background: $gray;
+}

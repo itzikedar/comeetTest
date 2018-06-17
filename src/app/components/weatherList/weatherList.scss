@@ -1,0 +1,30 @@
+@import "../../common/styles";
+@import "../../common/animations";
+
+.main{
+  text-align: center;
+  .listHeader{
+    margin-bottom: 50px;
+    height: 300px;
+    line-height: 300px;
+    background-image: url('../../../assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 0 0px 10px 0px black;
+    &>span{
+      display:block;
+      animation-name: bounceIn;
+      animation-duration: 0.8s;
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $white;
+      text-shadow: 2px 2px $black;
+      height: 70%;
+    }
+  }
+}
+.location-wrapper{
+  width:100%;
+  height: 100%;
+}
